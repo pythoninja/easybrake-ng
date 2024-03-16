@@ -7,6 +7,7 @@ work_branch := "master"
 # Commands
 dev:
     poetry install --no-root --with dev
+    poetry run pre-commit install --install-hooks
 
 enable-sign:
     git config --local commit.gpgsign true
