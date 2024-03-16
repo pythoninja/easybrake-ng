@@ -8,6 +8,9 @@ work_branch := "master"
 dev:
     poetry install --no-root --with dev
 
+enable-sign:
+    git config --local commit.gpgsign true
+
 switch branch:
     @echo 'Fetching and switching to {{branch}}'
     git fetch origin && git switch '{{branch}}'
