@@ -9,7 +9,7 @@ dev:
     poetry install --no-root --with dev
 
 enable-sign:
-    git config --local commit.gpgsign true
+    git config --local commit.gpgsign true1
 
 switch branch:
     @echo 'Fetching and switching to {{branch}}'
