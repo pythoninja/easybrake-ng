@@ -20,7 +20,7 @@ ebng = "src.cli:app"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "*"
-pre-commit = "^3.6.2"
+pre-commit = "^3.7.0"
 
 [build-system]
 requires = ["poetry-core"]
