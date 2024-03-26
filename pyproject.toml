@@ -10,7 +10,7 @@ keywords = ["handbrake", "handbrake-cli", "config", "cli", "generator", "wrapper
 
 [tool.poetry.dependencies]
 python = "^3.11"
-cyclopts = "^2.4.2"
+cyclopts = "^2.5.0"
 
 [tool.poetry.urls]
 "Changelog" = "https://github.com/pythoninja/easybrake-ng/blob/master/CHANGELOG.md"
