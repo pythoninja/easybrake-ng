@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 
 ### Development
 
+- **(dev)** Add changelog generator - ([784dfb0](https://github.com/pythoninja/sshgen/commit/784dfb09737f64d20b2db604969d7bde49c64190))
 - **(dev)** Update poetry.lock - ([25a731b](https://github.com/pythoninja/sshgen/commit/25a731b0492d8a0de7c724b634e1a25820727a29))
 - **(dev)** Add pre-commit init to justfile dev command - ([974f801](https://github.com/pythoninja/sshgen/commit/974f801b70948a40a65697cfc6c2eb0308a763fa))
 - **(dev)** Enable signing commits - ([ae627cb](https://github.com/pythoninja/sshgen/commit/ae627cbcee09bb3170230f2ffc0180390f8172c7))
