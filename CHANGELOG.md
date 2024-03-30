@@ -9,6 +9,10 @@ All notable changes to this project will be documented in this file.
 - **(app)** Add app without cli - ([1971654](https://github.com/pythoninja/sshgen/commit/1971654721d59f1545219fe7044755fecd07c3fa))
 - **(cli)** Add cli - ([cda82a1](https://github.com/pythoninja/sshgen/commit/cda82a14f58062da51f4209a8f9f3eb9d2658a39))
 
+### Bug Fixes
+
+- **(app)** Add run note after finish - ([18b080b](https://github.com/pythoninja/sshgen/commit/18b080b86c2f128162ac51c7d236394f792d0281))
+
 ### Development
 
 - **(dev)** Add changelog generator - ([784dfb0](https://github.com/pythoninja/sshgen/commit/784dfb09737f64d20b2db604969d7bde49c64190))
