@@ -21,6 +21,7 @@ class CommandGenerator:
             output_file = f"{self.output_dir}/{title} ({year}) [imdbid-] - {final_quality}.mp4"
 
             template = (
+                "# Convert {filename}\n"
                 "handbrakecli --preset-import-file '{preset_path}'"
                 " --preset '{preset_name}'"
                 " --input '{input_file}'"
@@ -33,6 +34,7 @@ class CommandGenerator:
                     preset_name=self.preset.name,
                     input_file=movie.full_path,
                     output_file=output_file,
+                    filename=movie.filename,
                     params=" ".join(self.additional_params),
                 )
             )

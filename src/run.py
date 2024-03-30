@@ -29,7 +29,7 @@ def easybrake_runner(input_dir: Path, output_dir: Path, preset_path: Path) -> No
     command_generator = CommandGenerator(preset=preset, movies=movies, output_dir=target_dir)
     commands: list[str] = command_generator.get()
 
-    print("# Generated hanbrake commands, just paste it to the bash (or similar) file")
+    print("# Generated hanbrake commands, just paste it to the bash, check and run\n")
     print(*commands, sep="\n\n")
 
 

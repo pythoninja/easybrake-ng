@@ -29,12 +29,15 @@ class FileMovieConverter:
             else:
                 final_quality = f"{self.preset.picture_height}p"
 
+            final_title = self.__normalize_title(title) if title else self.UNKNOWN_TITLE
+
             movies.append(
                 Movie(
-                    title=title if title else self.UNKNOWN_TITLE,
+                    title=final_title,
                     year=year if year else self.UNKNOWN_YEAR,
                     quality=quality if quality else self.UNKNOWN_QUALITY,
                     full_path=candidate,
+                    filename=candidate.name,
                     final_quality=final_quality,
                 )
             )
@@ -44,3 +47,11 @@ class FileMovieConverter:
     def __extract_info(self, regex_pattern: str, filename: str) -> str | None:
         if match := re.search(re.compile(regex_pattern), filename):
             return match.group(0)
+
+    def __normalize_title(self, title: str) -> str:
+        symbols = (".", ",", "-", "_")
+        for symbol in symbols:
+            if symbol in title:
+                title = title.replace(symbol, " ")
+
+        return title
