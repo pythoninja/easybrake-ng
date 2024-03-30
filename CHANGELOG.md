@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Features
 
 - **(app)** Add app without cli - ([1971654](https://github.com/pythoninja/sshgen/commit/1971654721d59f1545219fe7044755fecd07c3fa))
+- **(cli)** Add cli - ([cda82a1](https://github.com/pythoninja/sshgen/commit/cda82a14f58062da51f4209a8f9f3eb9d2658a39))
 
 ### Development
 
