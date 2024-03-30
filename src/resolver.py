@@ -3,9 +3,9 @@ from pathlib import Path
 
 
 class DirectoryResolver:
-    def __init__(self, target: str):
-        self.target: str = target
-        self.resolved_path: Path = Path(self.target).resolve()
+    def __init__(self, target: Path):
+        self.target: Path = target
+        self.resolved_path: Path = self.target.resolve()
 
     def directory_exists(self) -> bool:
         try:
@@ -21,5 +21,5 @@ class DirectoryResolver:
             except OSError as e:
                 print(f"Failed to create directory: {self.resolved_path}, reason: {e.strerror}")
                 sys.exit(1)
-            else:
-                return self.resolved_path
+
+        return self.resolved_path

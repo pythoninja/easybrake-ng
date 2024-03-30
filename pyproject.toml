@@ -8,6 +8,10 @@ repository = "https://github.com/pythoninja/easybrake-ng"
 readme = "README.md"
 keywords = ["handbrake", "handbrake-cli", "config", "cli", "generator", "wrapper"]
 
+packages = [
+    { include = "src" }
+]
+
 [tool.poetry.dependencies]
 python = "^3.11"
 cyclopts = "^2.5.0"
@@ -47,10 +51,6 @@ tag_template = "v{new_version}"
 [[tool.tbump.file]]
 src = "README.md"
 search = "Current version: v{current_version}"
-
-[[tool.tbump.file]]
-src = "README.md"
-search = "easybrake-ng@v"
 
 [[tool.tbump.file]]
 src = "src/__init__.py"
