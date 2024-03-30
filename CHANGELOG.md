@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Features
 
+- **(app)** Add final movie file normalization - ([71abf85](https://github.com/pythoninja/easybrake-ng/commit/71abf8566e15d5607b981ed834408e8d35f06f7a))
 - **(app)** Add app without cli - ([1971654](https://github.com/pythoninja/easybrake-ng/commit/1971654721d59f1545219fe7044755fecd07c3fa))
 - **(cli)** Add cli - ([cda82a1](https://github.com/pythoninja/easybrake-ng/commit/cda82a14f58062da51f4209a8f9f3eb9d2658a39))
 
@@ -15,6 +16,7 @@ All notable changes to this project will be documented in this file.
 
 ### Development
 
+- **(dev)** Fix repo in changelog generator - ([23467f1](https://github.com/pythoninja/easybrake-ng/commit/23467f16d92fdaff18bd1a006254eefcf8fa7016))
 - **(dev)** Add changelog generator - ([784dfb0](https://github.com/pythoninja/easybrake-ng/commit/784dfb09737f64d20b2db604969d7bde49c64190))
 - **(dev)** Update poetry.lock - ([25a731b](https://github.com/pythoninja/easybrake-ng/commit/25a731b0492d8a0de7c724b634e1a25820727a29))
 - **(dev)** Add pre-commit init to justfile dev command - ([974f801](https://github.com/pythoninja/easybrake-ng/commit/974f801b70948a40a65697cfc6c2eb0308a763fa))
