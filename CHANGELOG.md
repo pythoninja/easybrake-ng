@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 
 ### Bug Fixes
 
+- **(app)** Fix movie final quality detection - ([156e26f](https://github.com/pythoninja/easybrake-ng/commit/156e26f35454302085210f1a83ede99507e62155))
 - **(app)** Replace `'` with `"` in template - ([5677631](https://github.com/pythoninja/easybrake-ng/commit/567763106233ee70e2f7d7b04e86a0456e4f661a))
 - **(app)** Add run note after finish - ([18b080b](https://github.com/pythoninja/easybrake-ng/commit/18b080b86c2f128162ac51c7d236394f792d0281))
 
