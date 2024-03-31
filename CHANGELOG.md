@@ -9,9 +9,11 @@ All notable changes to this project will be documented in this file.
 - **(app)** Add final movie file normalization - ([71abf85](https://github.com/pythoninja/easybrake-ng/commit/71abf8566e15d5607b981ed834408e8d35f06f7a))
 - **(app)** Add app without cli - ([1971654](https://github.com/pythoninja/easybrake-ng/commit/1971654721d59f1545219fe7044755fecd07c3fa))
 - **(cli)** Add cli - ([cda82a1](https://github.com/pythoninja/easybrake-ng/commit/cda82a14f58062da51f4209a8f9f3eb9d2658a39))
+- **(experimental)** Add `--markers` option - ([7613400](https://github.com/pythoninja/easybrake-ng/commit/7613400215cb00d3efef46be7ceb77d47f4d164f))
 
 ### Bug Fixes
 
+- **(app)** Replace `'` with `"` in template - ([5677631](https://github.com/pythoninja/easybrake-ng/commit/567763106233ee70e2f7d7b04e86a0456e4f661a))
 - **(app)** Add run note after finish - ([18b080b](https://github.com/pythoninja/easybrake-ng/commit/18b080b86c2f128162ac51c7d236394f792d0281))
 
 ### Development
