@@ -24,10 +24,13 @@ class FileMovieConverter:
             quality: str = self.__extract_info(self.RE_QUALITY_PATTERN, candidate.name)
             title: str = self.__extract_info(self.RE_TITLE_PATTERN, candidate.name)
 
-            if quality and int(quality[:-1]) < self.preset.picture_height:
-                final_quality = quality
+            if quality:
+                if int(quality[:-1]) < self.preset.picture_height:
+                    final_quality = quality
+                else:
+                    final_quality = f"{self.preset.picture_height}p"
             else:
-                final_quality = f"{self.preset.picture_height}p"
+                final_quality = self.UNKNOWN_QUALITY
 
             final_title = self.__normalize_title(title) if title else self.UNKNOWN_TITLE
 
