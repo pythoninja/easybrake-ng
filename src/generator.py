@@ -22,9 +22,17 @@ class CommandGenerator:
             final_quality = movie.final_quality
 
             if movie.type == MovieType.SHOW:
-                output_file = f"{self.output_dir}/{title}.{season}{episode}.{final_quality}.mp4"
+                output_file = Path(
+                    f"{self.output_dir}/{title}/Season {season[1:]}/{title}.{season}{episode}.{final_quality}.mp4"
+                )
             else:
-                output_file = f"{self.output_dir}/{title} ({year}) [imdbid-] - {final_quality}.mp4"
+                output_file = Path(
+                    f"{self.output_dir}/{title} ({year})/{title} ({year}) [imdbid-] - {final_quality}.mp4"
+                )
+
+            # TODO(pythoninja): refactor this, directories should be created with DirectoryResolver
+            # https://github.com/pythoninja/easybrake-ng/issues/16
+            output_file.parent.mkdir(parents=True, exist_ok=True)
 
             template = (
                 "# Convert {filename}\n"
