@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from src.dtos.movie import Movie
+from src.dtos.movie import Movie, MovieType
 from src.dtos.preset import Preset
 
 
@@ -17,8 +17,14 @@ class CommandGenerator:
         for movie in self.movies:
             title = movie.title
             year = movie.year
+            season = movie.season
+            episode = movie.episode
             final_quality = movie.final_quality
-            output_file = f"{self.output_dir}/{title} ({year}) [imdbid-] - {final_quality}.mp4"
+
+            if movie.type == MovieType.SHOW:
+                output_file = f"{self.output_dir}/{title}.{season}{episode}.{final_quality}.mp4"
+            else:
+                output_file = f"{self.output_dir}/{title} ({year}) [imdbid-] - {final_quality}.mp4"
 
             template = (
                 "# Convert {filename}\n"
