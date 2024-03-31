@@ -9,7 +9,7 @@ class CommandGenerator:
         self.preset = preset
         self.output_dir = output_dir
         self.movies = movies
-        self.additional_params = ["--all-audio"]
+        self.additional_params = ["--all-audio", "--markers"]
 
     def get(self) -> list[str]:
         commands: list[str] = []
