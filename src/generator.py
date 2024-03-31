@@ -22,10 +22,10 @@ class CommandGenerator:
 
             template = (
                 "# Convert {filename}\n"
-                "handbrakecli --preset-import-file '{preset_path}'"
-                " --preset '{preset_name}'"
-                " --input '{input_file}'"
-                " --output '{output_file}'"
+                'handbrakecli --preset-import-file "{preset_path}"'
+                ' --preset "{preset_name}"'
+                ' --input "{input_file}"'
+                ' --output "{output_file}"'
                 " {params}"
             )
             commands.append(
