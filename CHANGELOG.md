@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file.
 
 ### Features
 
+- **(app)** Create required directories - ([01d8295](https://github.com/pythoninja/easybrake-ng/commit/01d829578867c3daefa7f9809ece6019535dffe5))
+- **(app)** Detect shows and films - ([87f2242](https://github.com/pythoninja/easybrake-ng/commit/87f224259fdfaeb68755d69b11035cc7e69c11c7))
 - **(app)** Add final movie file normalization - ([71abf85](https://github.com/pythoninja/easybrake-ng/commit/71abf8566e15d5607b981ed834408e8d35f06f7a))
 - **(app)** Add app without cli - ([1971654](https://github.com/pythoninja/easybrake-ng/commit/1971654721d59f1545219fe7044755fecd07c3fa))
 - **(cli)** Add cli - ([cda82a1](https://github.com/pythoninja/easybrake-ng/commit/cda82a14f58062da51f4209a8f9f3eb9d2658a39))
