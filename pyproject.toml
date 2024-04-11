@@ -14,7 +14,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.11"
-cyclopts = "^2.5.0"
+cyclopts = "^2.6.0"
 
 [tool.poetry.urls]
 "Changelog" = "https://github.com/pythoninja/easybrake-ng/blob/master/CHANGELOG.md"
