@@ -43,13 +43,13 @@ files = [
 
 [[package]]
 name = "cyclopts"
-version = "2.5.0"
+version = "2.6.1"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "cyclopts-2.5.0-py3-none-any.whl", hash = "sha256:7ff5ce56cf5beae4e1044a0005bc1f11edc934bb67f86571357f24840590a8aa"},
-    {file = "cyclopts-2.5.0.tar.gz", hash = "sha256:2bb46035631637e43dae24ccecec18689724c1e56dc941bf31f1f75ea9b62c7e"},
+    {file = "cyclopts-2.6.1-py3-none-any.whl", hash = "sha256:12cf686c0b99b31160dfbfab3a441f77d01d83858188806b11e1f8bbf19b2312"},
+    {file = "cyclopts-2.6.1.tar.gz", hash = "sha256:4acce6e650d21af464181f0242c2eda6478b46589522218b97cb45d84414c7aa"},
 ]
 
 [package.dependencies]
@@ -445,4 +445,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "fbdb552e20f4676a18d65ea62fdea81e093a3b8f15a3b1f9e79d365d337024b4"
+content-hash = "c0d50437530f01ae83da8087382bdc31a9c4b3099fa89002a88e84d62e053030"
