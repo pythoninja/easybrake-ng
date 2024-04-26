@@ -19,6 +19,10 @@ All notable changes to this project will be documented in this file.
 - **(app)** Replace `'` with `"` in template - ([5677631](https://github.com/pythoninja/easybrake-ng/commit/567763106233ee70e2f7d7b04e86a0456e4f661a))
 - **(app)** Add run note after finish - ([18b080b](https://github.com/pythoninja/easybrake-ng/commit/18b080b86c2f128162ac51c7d236394f792d0281))
 
+### Refactor
+
+- Create output directories before print commands - ([b9cba9a](https://github.com/pythoninja/easybrake-ng/commit/b9cba9ae80a62842fad6244319de7361d5530360))
+
 ### Development
 
 - **(dev)** Ignore FURB110 rule - ([fd52cc7](https://github.com/pythoninja/easybrake-ng/commit/fd52cc7fa5f47ae1cb62030f540bc6d9467c27fa))
