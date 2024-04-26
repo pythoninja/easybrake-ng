@@ -1,18 +1,20 @@
 from pathlib import Path
 
-from src.dtos.movie import Movie, MovieType
+from src.dtos.movie import MovieType
 from src.dtos.preset import Preset
+from src.named_type import CommandsAndDirectories, Commands, Directories, Movies
 
 
 class CommandGenerator:
-    def __init__(self, preset: Preset, movies: list[Movie], output_dir: Path) -> None:
+    def __init__(self, preset: Preset, movies: Movies, output_dir: Path) -> None:
         self.preset = preset
         self.output_dir = output_dir
         self.movies = movies
         self.additional_params = ["--all-audio", "--markers"]
 
-    def get(self) -> list[str]:
-        commands: list[str] = []
+    def get(self) -> CommandsAndDirectories:
+        commands: Commands = []
+        directories: Directories = []
 
         for movie in self.movies:
             title = movie.title
@@ -29,10 +31,6 @@ class CommandGenerator:
                 output_file = Path(
                     f"{self.output_dir}/{title} ({year})/{title} ({year}) [imdbid-] - {final_quality}.mp4"
                 )
-
-            # TODO(pythoninja): refactor this, directories should be created with DirectoryResolver
-            # https://github.com/pythoninja/easybrake-ng/issues/16
-            output_file.parent.mkdir(parents=True, exist_ok=True)
 
             template = (
                 "# Convert {filename}\n"
@@ -53,4 +51,6 @@ class CommandGenerator:
                 )
             )
 
-        return commands
+            directories.append(output_file.parent)
+
+        return commands, directories
