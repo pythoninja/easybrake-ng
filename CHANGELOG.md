@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Features
 
+- **(app)** Add loguru as logger - ([cd52aee](https://github.com/pythoninja/easybrake-ng/commit/cd52aee4e41ef3c22091474f30609f3561d5598b))
 - **(app)** Create required directories - ([01d8295](https://github.com/pythoninja/easybrake-ng/commit/01d829578867c3daefa7f9809ece6019535dffe5))
 - **(app)** Detect shows and films - ([87f2242](https://github.com/pythoninja/easybrake-ng/commit/87f224259fdfaeb68755d69b11035cc7e69c11c7))
 - **(app)** Add final movie file normalization - ([71abf85](https://github.com/pythoninja/easybrake-ng/commit/71abf8566e15d5607b981ed834408e8d35f06f7a))
