@@ -21,6 +21,8 @@ All notable changes to this project will be documented in this file.
 
 ### Development
 
+- **(dev)** Ignore FURB110 rule - ([fd52cc7](https://github.com/pythoninja/easybrake-ng/commit/fd52cc7fa5f47ae1cb62030f540bc6d9467c27fa))
+- **(dev)** Bump pre-commit ruff to 0.3.5 - ([6e6597f](https://github.com/pythoninja/easybrake-ng/commit/6e6597fa06482253fef6c8432410172e3ed133f4))
 - **(dev)** Fix repo in changelog generator - ([23467f1](https://github.com/pythoninja/easybrake-ng/commit/23467f16d92fdaff18bd1a006254eefcf8fa7016))
 - **(dev)** Add changelog generator - ([784dfb0](https://github.com/pythoninja/easybrake-ng/commit/784dfb09737f64d20b2db604969d7bde49c64190))
 - **(dev)** Update poetry.lock - ([25a731b](https://github.com/pythoninja/easybrake-ng/commit/25a731b0492d8a0de7c724b634e1a25820727a29))
