@@ -117,7 +117,8 @@ ignore = [
     "T201",
     "ANN201",
     "PLR6301",
-    "RUF027"
+    "RUF027",
+    "FURB110"
 ]
 
 [tool.ruff.lint.pylint]
