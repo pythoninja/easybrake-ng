@@ -4,14 +4,14 @@ from pathlib import Path
 from src.resolver import DirectoryResolver
 from src.converters.to_movie import FileMovieConverter
 from src.converters.to_preset import FilePresetConverter
-from src.dtos.movie import Movie
 from src.finder import MovieFinder
 from src.generator import CommandGenerator
+from src.named_type import Directories, Commands, Movies
 
 
 def easybrake_runner(input_dir: Path, output_dir: Path, preset_path: Path) -> None:
-    resolver = DirectoryResolver(target=output_dir)
-    target_dir = resolver.create_target_dir()
+    resolver = DirectoryResolver()
+    target_dir = resolver.resolve(output_dir)
 
     finder = MovieFinder(input_dir=input_dir)
     movie_files: list[Path] = finder.find_movies()
@@ -24,12 +24,16 @@ def easybrake_runner(input_dir: Path, output_dir: Path, preset_path: Path) -> No
     preset = preset_converter.get()
 
     movie_converter = FileMovieConverter(preset=preset, candidates=movie_files)
-    movies: list[Movie] = movie_converter.get()
+    movies: Movies = movie_converter.get()
 
     command_generator = CommandGenerator(preset=preset, movies=movies, output_dir=target_dir)
-    commands: list[str] = command_generator.get()
+    commands: Commands
+    dirs: Directories
+    commands, dirs = command_generator.get()
 
-    print("# Generated hanbrake commands, just paste it to the bash, check and run\n")
+    resolver.create_dirs(dirs)
+
+    print("# Generated hanbrake commands, just paste it to the bash script, check and run\n")
     print(*commands, sep="\n\n")
 
 

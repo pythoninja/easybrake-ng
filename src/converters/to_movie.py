@@ -3,6 +3,7 @@ from pathlib import Path
 
 from src.dtos.movie import Movie, MovieType
 from src.dtos.preset import Preset
+from src.named_type import Movies, ShowSeasonEpisodeOrNone
 
 
 class FileMovieConverter:
@@ -19,7 +20,7 @@ class FileMovieConverter:
         self.preset = preset
         self.candidates = candidates
 
-    def get(self) -> list[Movie]:
+    def get(self) -> Movies:
         movies = []
 
         for candidate in self.candidates:
@@ -60,7 +61,7 @@ class FileMovieConverter:
         if match := re.search(re.compile(regex_pattern), filename):
             return match.group(0)
 
-    def __extract_show_info(self, regex_pattern: str, filename: str) -> tuple[str, str] | tuple[None, None]:
+    def __extract_show_info(self, regex_pattern: str, filename: str) -> ShowSeasonEpisodeOrNone:
         if match := re.search(re.compile(regex_pattern), filename):
             return match.group(1), match.group(2)
         return None, None
