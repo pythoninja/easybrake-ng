@@ -1,6 +1,8 @@
 import re
 from pathlib import Path
 
+from loguru import logger
+
 from src.dtos.movie import Movie, MovieType
 from src.dtos.preset import Preset
 from src.named_type import Movies, ShowSeasonEpisodeOrNone
@@ -30,6 +32,8 @@ class FileMovieConverter:
             show: str = self.__extract_info(self.RE_SHOW_PATTERN, candidate.name)
             season, episode = self.__extract_show_info(self.RE_SHOW_PATTERN, candidate.name)
 
+            logger.info("Extracting info from file: {}", candidate.name)
+
             if quality:
                 if int(quality[:-1]) < self.preset.picture_height:
                     final_quality = quality
@@ -53,6 +57,16 @@ class FileMovieConverter:
                     season=season if season else None,
                     episode=episode if episode else None,
                 )
+            )
+
+            logger.info(
+                "Extracted values: title={}, year={}, final_quality={}, type={}, season={}, episode={}",
+                final_title,
+                year,
+                final_quality,
+                movie_type,
+                season,
+                episode,
             )
 
         return movies
