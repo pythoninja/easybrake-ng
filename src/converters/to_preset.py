@@ -3,6 +3,8 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from loguru import logger
+
 from src.dtos.preset import Preset
 
 
@@ -16,10 +18,10 @@ class FilePresetConverter:
             with self.preset_path.open(encoding="UTF-8") as preset_file:
                 return json.load(preset_file)
         except FileNotFoundError:
-            print(f"File {self.preset_path} does not exist.")
+            logger.error("File {} does not exist.", self.preset_path)
             sys.exit(1)
         except json.JSONDecodeError:
-            print(f"File {self.preset_path} is not a valid JSON.")
+            logger.error("File {} is not a valid JSON.", self.preset_path)
             sys.exit(1)
 
     def get(self) -> Preset:
@@ -47,5 +49,5 @@ class FilePresetConverter:
         try:
             return self.preset_json["PresetList"][0][property_name]
         except (KeyError, TypeError):
-            print(f"Invalid JSON structure: Missing {property_name} key.")
+            logger.error("Invalid JSON structure: Missing {} key.", property_name)
             sys.exit(1)
