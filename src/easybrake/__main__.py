@@ -1,4 +1,4 @@
-from src.cli import app
+from easybrake.cli import app
 
 
 def main() -> None:

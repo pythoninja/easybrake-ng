@@ -3,7 +3,7 @@ from urllib.parse import urlparse
 
 from loguru import logger
 
-from src.enums.location import LocationType
+from easybrake.enums.location import LocationType
 
 
 class URLUtils:

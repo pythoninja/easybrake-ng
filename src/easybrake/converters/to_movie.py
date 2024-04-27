@@ -3,9 +3,9 @@ from pathlib import Path
 
 from loguru import logger
 
-from src.dtos.movie import Movie, MovieType
-from src.dtos.preset import Preset
-from src.named_type import Movies, ShowSeasonEpisodeOrNone
+from easybrake.dtos.movie import Movie, MovieType
+from easybrake.dtos.preset import Preset
+from easybrake.utils.named_type import Movies, ShowSeasonEpisodeOrNone
 
 
 class FileMovieConverter:

@@ -1,8 +1,8 @@
 from pathlib import Path
 
-from src.dtos.movie import MovieType
-from src.dtos.preset import Preset
-from src.named_type import CommandsAndDirectories, Commands, Directories, Movies
+from easybrake.dtos.movie import MovieType
+from easybrake.dtos.preset import Preset
+from easybrake.utils.named_type import CommandsAndDirectories, Commands, Directories, Movies
 
 
 class CommandGenerator:

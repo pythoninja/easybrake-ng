@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Any
 
-from src.dtos.movie import Movie
+from easybrake.dtos.movie import Movie
 
 type Directories = list[Path]
 type Commands = list[str]

@@ -2,7 +2,7 @@ import re
 
 import pytest
 
-from src.converters.to_movie import FileMovieConverter
+from easybrake.converters.to_movie import FileMovieConverter
 from tests.utils.helpers import get_input
 
 

@@ -1,11 +1,7 @@
 from dataclasses import dataclass
-from enum import Enum, auto
 from pathlib import Path
 
-
-class MovieType(Enum):
-    FILM = auto()
-    SHOW = auto()
+from easybrake.enums.movie import MovieType
 
 
 @dataclass
