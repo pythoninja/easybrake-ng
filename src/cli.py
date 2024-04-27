@@ -2,7 +2,7 @@ from pathlib import Path
 
 from cyclopts import App
 
-from log import configure_logger
+from logger import init_logger
 from src.run import easybrake_runner
 from src import __version__, __app_name__
 
@@ -19,5 +19,5 @@ def process(input_dir: Path, output_dir: Path, preset_path: Path):
 
 
 if __name__ == "__main__":
-    configure_logger()
+    init_logger()
     app()

@@ -55,9 +55,9 @@ def easybrake_runner(input_dir: Path, output_dir: Path, preset_path: Path) -> No
 
 
 if __name__ == "__main__":
-    from log import configure_logger
+    from logger import init_logger
 
-    configure_logger()
+    init_logger()
 
     _preset_filename = "preset-example.json"
     _base_path = Path(__file__).resolve().parent.parent
