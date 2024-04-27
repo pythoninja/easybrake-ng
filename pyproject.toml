@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "easybrake-ng"
 version = "0.0.0"
-description = ""
+description = "Easy work with Handbrake presets and CLI"
 license = "Unlicense"
 authors = ["pythoninja <pythoninja@users.noreply.github.com>"]
 repository = "https://github.com/pythoninja/easybrake-ng"
@@ -9,11 +9,11 @@ readme = "README.md"
 keywords = ["handbrake", "handbrake-cli", "config", "cli", "generator", "wrapper"]
 
 packages = [
-    { include = "src" }
+    { include = "easybrake", from = "src" },
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 cyclopts = "^2.6.1"
 loguru = "^0.7.2"
 httpx = "^0.27.0"
@@ -22,7 +22,7 @@ httpx = "^0.27.0"
 "Changelog" = "https://github.com/pythoninja/easybrake-ng/blob/master/CHANGELOG.md"
 
 [tool.poetry.scripts]
-ebng = "src.cli:app"
+ebng = "easybrake.cli:app"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "*"

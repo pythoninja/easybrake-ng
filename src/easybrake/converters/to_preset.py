@@ -5,11 +5,11 @@ from pathlib import Path
 
 from loguru import logger
 
-from src.dtos.preset import Preset
-from src.utils.httpclient import HttpClient
-from src.utils.url import URLUtils
-from src.enums.location import LocationType
-from src.named_type import PresetJSON, PresetProperyValues
+from easybrake.dtos.preset import Preset
+from easybrake.utils.httpclient import HttpClient
+from easybrake.utils.url import URLUtils
+from easybrake.enums.location import LocationType
+from easybrake.utils.named_type import PresetJSON, PresetProperyValues
 
 
 class PresetConverter:

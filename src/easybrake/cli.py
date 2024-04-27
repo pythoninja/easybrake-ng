@@ -3,11 +3,12 @@ from typing import Annotated
 
 from cyclopts import App, Parameter
 
-from logger import init_logger
-from src.run import easybrake_runner
-from src import __version__, __app_name__
+from easybrake.logger import init_logger
+from easybrake.run import easybrake_runner
+from easybrake import __version__, __app_name__
 
 app = App(version=f"{__app_name__} v{__version__}", version_flags=["--version"], help_flags=["--help"])
+init_logger()
 
 
 @app.command()
@@ -20,5 +21,4 @@ def process(input_dir: Path, output_dir: Path, preset_location: Annotated[str, P
 
 
 if __name__ == "__main__":
-    init_logger()
     app()

@@ -3,7 +3,7 @@ from pathlib import Path
 
 from loguru import logger
 
-from src.named_type import Directories
+from easybrake.utils.named_type import Directories
 
 
 class DirectoryResolver:
