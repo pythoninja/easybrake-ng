@@ -3,12 +3,12 @@ from pathlib import Path
 
 from loguru import logger
 
-from src.resolver import DirectoryResolver
-from src.converters.to_movie import FileMovieConverter
-from src.converters.to_preset import PresetConverter
-from src.finder import MovieFinder
-from src.generator import CommandGenerator
-from src.named_type import Directories, Commands, Movies
+from easybrake.resolver import DirectoryResolver
+from easybrake.converters.to_movie import FileMovieConverter
+from easybrake.converters.to_preset import PresetConverter
+from easybrake.finder import MovieFinder
+from easybrake.generator import CommandGenerator
+from easybrake.utils.named_type import Directories, Commands, Movies
 
 
 def easybrake_runner(input_dir: Path, output_dir: Path, preset_location: str) -> None:
@@ -61,8 +61,7 @@ if __name__ == "__main__":
     init_logger()
 
     _preset_filename = "preset-example.json"
-    _base_path = Path(__file__).resolve().parent.parent
-    # _preset_path: Path = _base_path / "example" / "presets" / _preset_filename
+    _base_path = Path(__file__).resolve().parent.parent.parent
     _preset_location: str = str(_base_path / "example" / "presets" / _preset_filename)
     # _preset_location = "https://example.com/preset-example-from-url.json"
     _input_dir = _base_path / "example" / "videos" / "process"
