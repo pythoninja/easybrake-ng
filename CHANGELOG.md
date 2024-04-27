@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 - **(app)** Add app without cli - ([1971654](https://github.com/pythoninja/easybrake-ng/commit/1971654721d59f1545219fe7044755fecd07c3fa))
 - **(cli)** Add cli - ([cda82a1](https://github.com/pythoninja/easybrake-ng/commit/cda82a14f58062da51f4209a8f9f3eb9d2658a39))
 - **(experimental)** Add `--markers` option - ([7613400](https://github.com/pythoninja/easybrake-ng/commit/7613400215cb00d3efef46be7ceb77d47f4d164f))
+- Load preset from url - ([77eaae5](https://github.com/pythoninja/easybrake-ng/commit/77eaae59078f7d0aa3447c5577c954dd7962119a))
 
 ### Bug Fixes
 
