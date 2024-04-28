@@ -2,11 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [0.1.0] - 2024-04-28
 
 ### Features
 
 - **(app)** Add loguru as logger - ([cd52aee](https://github.com/pythoninja/easybrake/commit/cd52aee4e41ef3c22091474f30609f3561d5598b))
+- **(app)** Load preset from url - ([4936fda](https://github.com/pythoninja/easybrake/commit/4936fda5e0774acfb745495f66370df8c795eae6))
+- **(app)** Add loguru as logger - ([39949e0](https://github.com/pythoninja/easybrake/commit/39949e0e4f69464dbfdb6bfae249aee1a8da05a8))
 - **(app)** Create required directories - ([01d8295](https://github.com/pythoninja/easybrake/commit/01d829578867c3daefa7f9809ece6019535dffe5))
 - **(app)** Detect shows and films - ([87f2242](https://github.com/pythoninja/easybrake/commit/87f224259fdfaeb68755d69b11035cc7e69c11c7))
 - **(app)** Add final movie file normalization - ([71abf85](https://github.com/pythoninja/easybrake/commit/71abf8566e15d5607b981ed834408e8d35f06f7a))
@@ -24,13 +26,12 @@ All notable changes to this project will be documented in this file.
 ### Refactor
 
 - **(app)** Move files into own package - ([cbc4a41](https://github.com/pythoninja/easybrake/commit/cbc4a414f39d20a8302049b8ca32e14fc84c1e67))
+- **(app)** Make ready to first release - ([7d7c990](https://github.com/pythoninja/easybrake/commit/7d7c990de21242a70ab78998d909cf9c8e5c5d68))
+- **(app)** Move files into own package - ([35711de](https://github.com/pythoninja/easybrake/commit/35711de9f99b35ac25e3e9510b33cadb22602a86))
+- **(app)** Create output directories before print commands - ([65f59cc](https://github.com/pythoninja/easybrake/commit/65f59cc9493abd8bd3f9007bde837ae8e3a1a701))
 - **(log)** Rename log module - ([ea4b107](https://github.com/pythoninja/easybrake/commit/ea4b107e382120e4ba53cca77842c52cdaf46e85))
+- **(log)** Rename log module - ([1963d33](https://github.com/pythoninja/easybrake/commit/1963d33799933c2877fae7951e2e5a7104189949))
 - Create output directories before print commands - ([b9cba9a](https://github.com/pythoninja/easybrake/commit/b9cba9ae80a62842fad6244319de7361d5530360))
-
-### Refactor
-
-- **(log)** Rename log module - ([ea4b107](https://github.com/pythoninja/easybrake-ng/commit/ea4b107e382120e4ba53cca77842c52cdaf46e85))
-- Create output directories before print commands - ([b9cba9a](https://github.com/pythoninja/easybrake-ng/commit/b9cba9ae80a62842fad6244319de7361d5530360))
 
 ### Development
 
