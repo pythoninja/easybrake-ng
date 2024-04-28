@@ -46,7 +46,7 @@ footer = """
 """
 
 postprocessors = [
-  { pattern = '<REPO>', replace = "https://github.com/pythoninja/easybrake-ng" }, # replace repository URL
+  { pattern = '<REPO>', replace = "https://github.com/pythoninja/easybrake" }, # replace repository URL
 ]
 
 [git]

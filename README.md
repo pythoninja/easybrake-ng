@@ -1,8 +1,8 @@
-# easybrake-ng
+# easybrake
 
 > [!IMPORTANT]
-> This repository contains software that is currently considered **Work in Progress**.
+> This repository contains beta software that. You should expect some known or unknown bugs.
 
 A Hanbrake CLI wrapper for easy video conversion and working with presets.
 
-Current version: v0.0.0
+Current version: v0.1.0
