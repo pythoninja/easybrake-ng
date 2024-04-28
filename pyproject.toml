@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "easybrake-ng"
-version = "0.0.0"
+name = "easybrake"
+version = "0.1.0"
 description = "Easy work with Handbrake presets and CLI"
 license = "Unlicense"
 authors = ["pythoninja <pythoninja@users.noreply.github.com>"]
-repository = "https://github.com/pythoninja/easybrake-ng"
+repository = "https://github.com/pythoninja/easybrake"
 readme = "README.md"
-keywords = ["handbrake", "handbrake-cli", "config", "cli", "generator", "wrapper"]
+keywords = ["handbrake", "handbrake-cli", "cli wrapper", "command generator"]
 
 packages = [
     { include = "easybrake", from = "src" },
@@ -19,10 +19,10 @@ loguru = "^0.7.2"
 httpx = "^0.27.0"
 
 [tool.poetry.urls]
-"Changelog" = "https://github.com/pythoninja/easybrake-ng/blob/master/CHANGELOG.md"
+"Changelog" = "https://github.com/pythoninja/easybrake/blob/master/CHANGELOG.md"
 
 [tool.poetry.scripts]
-ebng = "easybrake.cli:app"
+easybrake = "easybrake.cli:app"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "*"
@@ -34,10 +34,10 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.tbump]
-github_url = "https://github.com/pythoninja/easybrake-ng"
+github_url = "https://github.com/pythoninja/easybrake"
 
 [tool.tbump.version]
-current = "0.0.0"
+current = "0.1.0"
 regex = '''
   (?P<major>\d+)
   \.
@@ -55,7 +55,7 @@ src = "README.md"
 search = "Current version: v{current_version}"
 
 [[tool.tbump.file]]
-src = "src/__init__.py"
+src = "src/easybrake/__init__.py"
 search = "__version__ = \"{current_version}\""
 
 [[tool.tbump.before_commit]]
@@ -69,7 +69,7 @@ cmd = "git cliff --tag {new_version} --output CHANGELOG.md"
 [tool.ruff]
 exclude = ["tests/"]
 line-length = 120
-target-version = "py311"
+target-version = "py312"
 preview = true
 
 [tool.ruff.lint]

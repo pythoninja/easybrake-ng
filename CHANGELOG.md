@@ -6,43 +6,44 @@ All notable changes to this project will be documented in this file.
 
 ### Features
 
-- **(app)** Add loguru as logger - ([cd52aee](https://github.com/pythoninja/easybrake-ng/commit/cd52aee4e41ef3c22091474f30609f3561d5598b))
-- **(app)** Create required directories - ([01d8295](https://github.com/pythoninja/easybrake-ng/commit/01d829578867c3daefa7f9809ece6019535dffe5))
-- **(app)** Detect shows and films - ([87f2242](https://github.com/pythoninja/easybrake-ng/commit/87f224259fdfaeb68755d69b11035cc7e69c11c7))
-- **(app)** Add final movie file normalization - ([71abf85](https://github.com/pythoninja/easybrake-ng/commit/71abf8566e15d5607b981ed834408e8d35f06f7a))
-- **(app)** Add app without cli - ([1971654](https://github.com/pythoninja/easybrake-ng/commit/1971654721d59f1545219fe7044755fecd07c3fa))
-- **(cli)** Add cli - ([cda82a1](https://github.com/pythoninja/easybrake-ng/commit/cda82a14f58062da51f4209a8f9f3eb9d2658a39))
-- **(experimental)** Add `--markers` option - ([7613400](https://github.com/pythoninja/easybrake-ng/commit/7613400215cb00d3efef46be7ceb77d47f4d164f))
-- Load preset from url - ([77eaae5](https://github.com/pythoninja/easybrake-ng/commit/77eaae59078f7d0aa3447c5577c954dd7962119a))
+- **(app)** Add loguru as logger - ([cd52aee](https://github.com/pythoninja/easybrake/commit/cd52aee4e41ef3c22091474f30609f3561d5598b))
+- **(app)** Create required directories - ([01d8295](https://github.com/pythoninja/easybrake/commit/01d829578867c3daefa7f9809ece6019535dffe5))
+- **(app)** Detect shows and films - ([87f2242](https://github.com/pythoninja/easybrake/commit/87f224259fdfaeb68755d69b11035cc7e69c11c7))
+- **(app)** Add final movie file normalization - ([71abf85](https://github.com/pythoninja/easybrake/commit/71abf8566e15d5607b981ed834408e8d35f06f7a))
+- **(app)** Add app without cli - ([1971654](https://github.com/pythoninja/easybrake/commit/1971654721d59f1545219fe7044755fecd07c3fa))
+- **(cli)** Add cli - ([cda82a1](https://github.com/pythoninja/easybrake/commit/cda82a14f58062da51f4209a8f9f3eb9d2658a39))
+- **(experimental)** Add `--markers` option - ([7613400](https://github.com/pythoninja/easybrake/commit/7613400215cb00d3efef46be7ceb77d47f4d164f))
+- Load preset from url - ([77eaae5](https://github.com/pythoninja/easybrake/commit/77eaae59078f7d0aa3447c5577c954dd7962119a))
 
 ### Bug Fixes
 
-- **(app)** Fix movie final quality detection - ([156e26f](https://github.com/pythoninja/easybrake-ng/commit/156e26f35454302085210f1a83ede99507e62155))
-- **(app)** Replace `'` with `"` in template - ([5677631](https://github.com/pythoninja/easybrake-ng/commit/567763106233ee70e2f7d7b04e86a0456e4f661a))
-- **(app)** Add run note after finish - ([18b080b](https://github.com/pythoninja/easybrake-ng/commit/18b080b86c2f128162ac51c7d236394f792d0281))
+- **(app)** Fix movie final quality detection - ([156e26f](https://github.com/pythoninja/easybrake/commit/156e26f35454302085210f1a83ede99507e62155))
+- **(app)** Replace `'` with `"` in template - ([5677631](https://github.com/pythoninja/easybrake/commit/567763106233ee70e2f7d7b04e86a0456e4f661a))
+- **(app)** Add run note after finish - ([18b080b](https://github.com/pythoninja/easybrake/commit/18b080b86c2f128162ac51c7d236394f792d0281))
 
 ### Refactor
 
-- **(log)** Rename log module - ([ea4b107](https://github.com/pythoninja/easybrake-ng/commit/ea4b107e382120e4ba53cca77842c52cdaf46e85))
-- Create output directories before print commands - ([b9cba9a](https://github.com/pythoninja/easybrake-ng/commit/b9cba9ae80a62842fad6244319de7361d5530360))
+- **(app)** Move files into own package - ([cbc4a41](https://github.com/pythoninja/easybrake/commit/cbc4a414f39d20a8302049b8ca32e14fc84c1e67))
+- **(log)** Rename log module - ([ea4b107](https://github.com/pythoninja/easybrake/commit/ea4b107e382120e4ba53cca77842c52cdaf46e85))
+- Create output directories before print commands - ([b9cba9a](https://github.com/pythoninja/easybrake/commit/b9cba9ae80a62842fad6244319de7361d5530360))
 
 ### Development
 
-- **(dev)** Ignore FURB110 rule - ([fd52cc7](https://github.com/pythoninja/easybrake-ng/commit/fd52cc7fa5f47ae1cb62030f540bc6d9467c27fa))
-- **(dev)** Bump pre-commit ruff to 0.3.5 - ([6e6597f](https://github.com/pythoninja/easybrake-ng/commit/6e6597fa06482253fef6c8432410172e3ed133f4))
-- **(dev)** Fix repo in changelog generator - ([23467f1](https://github.com/pythoninja/easybrake-ng/commit/23467f16d92fdaff18bd1a006254eefcf8fa7016))
-- **(dev)** Add changelog generator - ([784dfb0](https://github.com/pythoninja/easybrake-ng/commit/784dfb09737f64d20b2db604969d7bde49c64190))
-- **(dev)** Update poetry.lock - ([25a731b](https://github.com/pythoninja/easybrake-ng/commit/25a731b0492d8a0de7c724b634e1a25820727a29))
-- **(dev)** Add pre-commit init to justfile dev command - ([974f801](https://github.com/pythoninja/easybrake-ng/commit/974f801b70948a40a65697cfc6c2eb0308a763fa))
-- **(dev)** Enable signing commits - ([ae627cb](https://github.com/pythoninja/easybrake-ng/commit/ae627cbcee09bb3170230f2ffc0180390f8172c7))
-- **(dev)** Test sign push - ([060ac22](https://github.com/pythoninja/easybrake-ng/commit/060ac22c8fcd31074c0718cf3061e21fca56c47b))
-- **(dev)** Add enable-sign command to justfile - ([74fe3cc](https://github.com/pythoninja/easybrake-ng/commit/74fe3ccdf800a562a4ddab45f3a8e06fe0475e63))
-- **(dev)** Update to ruff 0.3.3 - ([201a221](https://github.com/pythoninja/easybrake-ng/commit/201a221e9bfe0db579a05d93fdadb8b0474075a4))
-- **(dev)** Add just commands - ([b994acf](https://github.com/pythoninja/easybrake-ng/commit/b994acfb759e3e6deedc52276ee7b64259526bac))
-- **(dev)** Add blank project - ([8ce4a76](https://github.com/pythoninja/easybrake-ng/commit/8ce4a763e519c8b4568c1d0b74d43d6c07717cdc))
+- **(dev)** Ignore FURB110 rule - ([fd52cc7](https://github.com/pythoninja/easybrake/commit/fd52cc7fa5f47ae1cb62030f540bc6d9467c27fa))
+- **(dev)** Bump pre-commit ruff to 0.3.5 - ([6e6597f](https://github.com/pythoninja/easybrake/commit/6e6597fa06482253fef6c8432410172e3ed133f4))
+- **(dev)** Fix repo in changelog generator - ([23467f1](https://github.com/pythoninja/easybrake/commit/23467f16d92fdaff18bd1a006254eefcf8fa7016))
+- **(dev)** Add changelog generator - ([784dfb0](https://github.com/pythoninja/easybrake/commit/784dfb09737f64d20b2db604969d7bde49c64190))
+- **(dev)** Update poetry.lock - ([25a731b](https://github.com/pythoninja/easybrake/commit/25a731b0492d8a0de7c724b634e1a25820727a29))
+- **(dev)** Add pre-commit init to justfile dev command - ([974f801](https://github.com/pythoninja/easybrake/commit/974f801b70948a40a65697cfc6c2eb0308a763fa))
+- **(dev)** Enable signing commits - ([ae627cb](https://github.com/pythoninja/easybrake/commit/ae627cbcee09bb3170230f2ffc0180390f8172c7))
+- **(dev)** Test sign push - ([060ac22](https://github.com/pythoninja/easybrake/commit/060ac22c8fcd31074c0718cf3061e21fca56c47b))
+- **(dev)** Add enable-sign command to justfile - ([74fe3cc](https://github.com/pythoninja/easybrake/commit/74fe3ccdf800a562a4ddab45f3a8e06fe0475e63))
+- **(dev)** Update to ruff 0.3.3 - ([201a221](https://github.com/pythoninja/easybrake/commit/201a221e9bfe0db579a05d93fdadb8b0474075a4))
+- **(dev)** Add just commands - ([b994acf](https://github.com/pythoninja/easybrake/commit/b994acfb759e3e6deedc52276ee7b64259526bac))
+- **(dev)** Add blank project - ([8ce4a76](https://github.com/pythoninja/easybrake/commit/8ce4a763e519c8b4568c1d0b74d43d6c07717cdc))
 
 ### Miscellaneous Tasks
 
-- Update example files - ([a339813](https://github.com/pythoninja/easybrake-ng/commit/a3398133b259eabdae7c877a9f25b31bf0508617))
+- Update example files - ([a339813](https://github.com/pythoninja/easybrake/commit/a3398133b259eabdae7c877a9f25b31bf0508617))
 
 <!-- generated by git-cliff -->
