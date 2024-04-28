@@ -27,6 +27,11 @@ All notable changes to this project will be documented in this file.
 - **(log)** Rename log module - ([ea4b107](https://github.com/pythoninja/easybrake/commit/ea4b107e382120e4ba53cca77842c52cdaf46e85))
 - Create output directories before print commands - ([b9cba9a](https://github.com/pythoninja/easybrake/commit/b9cba9ae80a62842fad6244319de7361d5530360))
 
+### Refactor
+
+- **(log)** Rename log module - ([ea4b107](https://github.com/pythoninja/easybrake-ng/commit/ea4b107e382120e4ba53cca77842c52cdaf46e85))
+- Create output directories before print commands - ([b9cba9a](https://github.com/pythoninja/easybrake-ng/commit/b9cba9ae80a62842fad6244319de7361d5530360))
+
 ### Development
 
 - **(dev)** Ignore FURB110 rule - ([fd52cc7](https://github.com/pythoninja/easybrake/commit/fd52cc7fa5f47ae1cb62030f540bc6d9467c27fa))
